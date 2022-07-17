@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+        <h1>Найдено со скиллом {{skill}}: {{candidate_with_skills | length}}</h1>
+            {% for card in candidate_with_skills %}
+                <p><a href="/candidate/{{card.pk}}">{{card.name}}</a></p>
+            {% endfor %}
+</div>
+</body>
+</html>
